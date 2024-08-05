@@ -41,47 +41,47 @@ const HomePage = () => {
         <meta name="description" content="DNYX is coming soon. Stay tuned!" />
       </Head>
       {/* Logo */}
-
-      <Image src="https://ik.imagekit.io/js1b7wgem/download%20(1)%20(1).png?updatedAt=1722833407473" alt="DNYX Logo" />
+      <Image src="https://ik.imagekit.io/js1b7wgem/download%20(1)%20(1).png?updatedAt=1722833407473" alt="DNYX Logo" className="logo" width={60} height={60} />
       <div className="text-center py-12 bg-white bg-opacity-80 rounded-lg p-6">
         <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl">We’re Launching Soon!</h1>
         <p className="text-left mt-2 text-base sm:text-lg md:text-xl">
-        Our website is currently under construction. We can &apos; t wait to show you what we’ve been working on.</p>
+          Our website is currently under construction. We can&apos;t wait to show you what we&apos;ve been working on.
+        </p>
         {/* Countdown Timer */}
-        <div className="timer-container mt-8">
-          <div className="timer-box">
-            <span>{timeLeft.days}</span>
-            <div className="label">Days</div>
+        <div className="timer-container flex justify-center mt-8 space-x-4">
+          <div className="timer-box bg-gray-200 p-4 rounded-lg">
+            <span className="text-2xl font-bold">{timeLeft.days}</span>
+            <div className="label text-sm">Days</div>
           </div>
-          <div className="timer-box">
-            <span>{timeLeft.hours}</span>
-            <div className="label">Hours</div>
+          <div className="timer-box bg-gray-200 p-4 rounded-lg">
+            <span className="text-2xl font-bold">{timeLeft.hours}</span>
+            <div className="label text-sm">Hours</div>
           </div>
-          <div className="timer-box">
-            <span>{timeLeft.minutes}</span>
-            <div className="label">Minutes</div>
+          <div className="timer-box bg-gray-200 p-4 rounded-lg">
+            <span className="text-2xl font-bold">{timeLeft.minutes}</span>
+            <div className="label text-sm">Minutes</div>
           </div>
-          <div className="timer-box">
-            <span>{timeLeft.seconds}</span>
-            <div className="label">Seconds</div>
+          <div className="timer-box bg-gray-200 p-4 rounded-lg">
+            <span className="text-2xl font-bold">{timeLeft.seconds}</span>
+            <div className="label text-sm">Seconds</div>
           </div>
         </div>
       </div>
       {/* Social Media Icons */}
-      <div className="social-media">
-        <a href="https://twitter.com/dnyxofficial" target="_blank" rel="noopener noreferrer" aria-label="DNYX on Twitter">
+      <div className="social-media absolute bottom-4 flex justify-center w-full space-x-4">
+        <a href="https://twitter.com/dnyxofficial" target="_blank" rel="noopener noreferrer" aria-label="DNYX on Twitter" className="text-black">
           <FaTwitter size={24} />
         </a>
-        <a href="https://facebook.com/dnyx.in" target="_blank" rel="noopener noreferrer" aria-label="DNYX on Facebook">
+        <a href="https://facebook.com/dnyx.in" target="_blank" rel="noopener noreferrer" aria-label="DNYX on Facebook" className="text-black">
           <FaFacebookF size={24} />
         </a>
-        <a href="https://linkedin.com/company/dnyx" target="_blank" rel="noopener noreferrer" aria-label="DNYX on LinkedIn">
+        <a href="https://linkedin.com/company/dnyx" target="_blank" rel="noopener noreferrer" aria-label="DNYX on LinkedIn" className="text-black">
           <FaLinkedinIn size={24} />
         </a>
-        <a href="https://instagram.com/dnyx.in" target="_blank" rel="noopener noreferrer" aria-label="DNYX on Instagram">
+        <a href="https://instagram.com/dnyx.in" target="_blank" rel="noopener noreferrer" aria-label="DNYX on Instagram" className="text-black">
           <FaInstagram size={24} />
         </a>
-        <a href="https://github.com/dnyxofficial" target="_blank" rel="noopener noreferrer" aria-label="DNYX on GitHub">
+        <a href="https://github.com/dnyxofficial" target="_blank" rel="noopener noreferrer" aria-label="DNYX on GitHub" className="text-black">
           <FaGithub size={24} />
         </a>
       </div>
