@@ -41,7 +41,7 @@ const HomePage = () => {
         <meta name="description" content="DNYX is coming soon. Stay tuned!" />
       </Head>
       {/* Logo */}
-      <Image src="./dnyx-logo.png" alt="DNYX Logo" className="logo" width={60} height={60} />
+    <Image src="/images/dnyx.png" alt="DNYX Logo" className="logo" height={120} width={200}/>
       <div className="text-center py-12 bg-white bg-opacity-80 rounded-lg p-6">
         <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl">We&apos;re Launching Soon!</h1>
         <p className="text-left mt-2 text-base sm:text-lg md:text-xl">
