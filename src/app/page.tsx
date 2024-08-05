@@ -43,7 +43,7 @@ const HomePage = () => {
       {/* Logo */}
       <Image src="https://ik.imagekit.io/js1b7wgem/download%20(1)%20(1).png?updatedAt=1722833407473" alt="DNYX Logo" className="logo" width={60} height={60} />
       <div className="text-center py-12 bg-white bg-opacity-80 rounded-lg p-6">
-        <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl">We’re Launching Soon!</h1>
+        <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl">We&apos;re Launching Soon!</h1>
         <p className="text-left mt-2 text-base sm:text-lg md:text-xl">
           Our website is currently under construction. We can&apos;t wait to show you what we&apos;ve been working on.
         </p>
