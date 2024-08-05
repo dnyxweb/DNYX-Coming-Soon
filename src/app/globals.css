@@ -1,0 +1,134 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Background styling */
+.background-image {
+  background-image: url('https://ik.imagekit.io/js1b7wgem/bg.jpg?updatedAt=1722833173340');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo styling */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 60px; /* Adjust based on logo size */
+}
+
+/* Countdown timer styling */
+.timer-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.timer-box {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.timer-box:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.05);
+}
+
+.timer-box span {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.timer-box .label {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+
+.social-media {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.social-media a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Text styling */
+.text-center {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.text-center h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  animation: slideIn 1s ease-out;
+}
+
+.text-center p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  
+  display: inline-block;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
