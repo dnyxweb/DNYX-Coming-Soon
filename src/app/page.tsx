@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 import { FaTwitter, FaFacebookF, FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa';
 
 interface TimeLeft {
@@ -40,11 +41,12 @@ const HomePage = () => {
         <meta name="description" content="DNYX is coming soon. Stay tuned!" />
       </Head>
       {/* Logo */}
-      <img src="https://ik.imagekit.io/js1b7wgem/download%20(1)%20(1).png?updatedAt=1722833407473" alt="DNYX Logo" className="logo"/>
+
+      <Image src="https://ik.imagekit.io/js1b7wgem/download%20(1)%20(1).png?updatedAt=1722833407473" alt="DNYX Logo" />
       <div className="text-center py-12 bg-white bg-opacity-80 rounded-lg p-6">
         <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl">We’re Launching Soon!</h1>
         <p className="text-left mt-2 text-base sm:text-lg md:text-xl">
-        Our website is currently under construction. We can&apos;t wait to show you what we’ve been working on.</p>
+        Our website is currently under construction. We can &apos; t wait to show you what we’ve been working on.</p>
         {/* Countdown Timer */}
         <div className="timer-container mt-8">
           <div className="timer-box">
