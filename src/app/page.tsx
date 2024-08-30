@@ -17,7 +17,7 @@ const HomePage = () => {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const targetDate = new Date('2024-08-20T23:59:59Z'); // Set your target date here
+      const targetDate = new Date('2024-09-05T23:59:59Z'); // Set your target date here
       const now = new Date();
       const difference = targetDate.getTime() - now.getTime();
 
